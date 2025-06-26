@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon1.png">
+    <title>Online Shopping Site for Outfits, Gadgets</title>
+
+    <!-- tag to embed css -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;
+0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;
+1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo1.png" width="70px">
+                        <img src="img/logo2.png" width="140px">
+                    </a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="main.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="img/cart.png" width="30px" height="30px"></a>
+                <button id="logoutBtn" style="
+        background-color: #e74c3c;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        margin-left: 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+    ">Logout</button>
+                <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <h1>Give Your Look A New Style!</h1>
+                    <p>Fashion you can buy, but style you possess. The key to
+                        style is learning <br> who you are, which takes years.
+                        There's no how-to road map to style. <br> It's about self
+                        expression and, above all, attitude.</p>
+                    <a href="products.html" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="img/img1.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------features categories----->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="img/cat1.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="img/ca2.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="img/cat3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------featured products----->
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="productdetail.html"> <img src="img/ta1.jpg" alt=""> </a>
+                <a href="productdetail.html">
+                    <h4>Red Printed T-shirt</h4>
+                </a>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="img/sh1.jpg" alt="">
+                <h4>Air Light shoes</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$34.10</p>
+            </div>
+            <div class="col-4">
+                <img src="img/ta3.jpg" alt="">
+                <h4>Printed Men Wear</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$45.28</p>
+            </div>
+            <div class="col-4">
+                <img src="img/fl1.jpg" alt="">
+                <h4>Shirt and Pant</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$99.30</p>
+            </div>
+
+            <!-----latest product-->
+            <h2 class="title">Latest Products</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="img/la1.jpg" alt="">
+                    <h4>Stylish Lower Male</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$40.30</p>
+                </div>
+                <div class="col-4">
+                    <img src="img/ww1.jpg" alt="">
+                    <h4>Black Smart Watch</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$70.30</p>
+                </div>
+                <div class="col-4">
+                    <img src="img/ba4.jpg" alt="">
+                    <h4>Leather Wrist Wear</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$09.32</p>
+                </div>
+                <div class="col-4">
+                    <img src="img/ll20.jpg" alt="">
+                    <h4>Female Upper Wear</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$27.32</p>
+                </div>
+                <div class="col-4">
+                    <img src="img/ta6.jpg" alt="">
+                    <h4>Written Half Shirt</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$38.32</p>
+                </div>
+                <div class="col-4">
+                    <img src="img/la3.jpg" alt="">
+                    <h4>Men Lower Wear</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$35.32</p>
+                </div>
+                <div class="col-4">
+                    <img src="img/pp2.jpg" alt="">
+                    <h4>Leather Carry Purse</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$21.32</p>
+                </div>
+                <div class="col-4">
+                    <img src="img/ta7.jpg" alt="">
+                    <h4>Duke full T Shirt</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>$68.20</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------exclusive offer------->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="img/ex1.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on Unikart</p>
+                    <h1>Mi Smart Band 5</h1>
+                    <small>Everything on one screen.
+                        Approximately 20% further increase in display area*
+                        makes incoming calls,
+                        messages and alerts easier to see and ushers in a
+                        new era of unlimited watch faces.</small> <br>
+                    <a href="https://www.mi.com/in/mi-smart-band-5/?skupanel=1" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------testimonial------->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Just wanted to thank you for all the great work
+                        your team has delivered. I really appreciate the quick
+                        turnaround and clear communication that you have demonstrated
+                        consistently over the last few months.</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <img src="img/p1.jpg" alt="">
+                    <h3>Beca Harley</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>The copy has come out very well. Thank you for the attention
+                        to detail and due diligence. All the work delivered by your team
+                        meets our expectations and we can now proceed with further tasks for my eCommerce store.</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <img src="img/p2.jpg" alt="">
+                    <h3>Roger Crimmins</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Once again, your hard work does not go unnoticed, and I genuinely
+                        appreciate your dedication. All the team members did their best to
+                        deliver quality descriptions for the products. Really impressed with the quality and timely
+                        work.</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <img src="img/p3.jpg" alt="">
+                    <h3>Daniel Fletcher</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------footer----------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and Ios Mobile Phone.</p>
+                    <div class="app-logo">
+                        <img src="img/play.png" alt="">
+                        <img src="img/app.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="img/logo2.png" alt="">
+                    <p>Our Purpose is to Sustainably Make the Pleasure and
+                        Benefits of Sports & Fashion Accessible to Many in the Form of Quality Products.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter(X)</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">© 2024, Unikart</p>
+        </div>
+    </div>
+
+    <!-- tag to embed javascript -->
+    <script src="script.js"></script>
+
+    <!-- logout button -->
+    <script>
+  const logoutBtn = document.getElementById("logoutBtn");
+  if (logoutBtn) {
+    logoutBtn.addEventListener("click", () => {
+      localStorage.removeItem("token");
+      window.location.href = "index.html"; // Redirect to login page
+    });
+  }
+</script>
+
+</body>
+
+</html>
